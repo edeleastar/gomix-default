@@ -34,6 +34,6 @@ const dreams = [
 ];
 
 // listen for requests :)
-const listener = app.listen(process.env.PORT | 4000, function () {
+const listener = app.listen(process.env.PORT || 4000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
